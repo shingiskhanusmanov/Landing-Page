@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(images/premium_photo-1706140675031-1e0548986ad1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav-box {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.main-h1 {
+  font-size: 48px;
+  color: white;
+  cursor: pointer;
+}
+
+nav ul li {
+  align-items: center;
+  /* position: relative; */
+  display: inline-block;
+}
+
+nav ul li a {
+  margin-right: 48px;
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background: antiquewhite;
+  transition: 0.4s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+}
+
+.main-h2 {
+  font-size: 70px;
+  margin-top: 80px;
+}
+
+p {
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+  margin-bottom: 36px;
+}
+
+.more {
+  display: inline-block;
+  position: relative;
+  font-size: 20px;
+  color: white;
+  border: 2px solid antiquewhite;
+  border-radius: 25px;
+  background: transparent;
+  padding: 12px 30px;
+  margin: 20px;
+  /* text-align: center; */
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.more span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: antiquewhite;
+  border-radius: 25px;
+  z-index: -1;
+  transition: 0.4s;
+}
+
+.more:hover span {
+  width: 100%;
+}
+
+.more:hover {
+  color: black;
+}
